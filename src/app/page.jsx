@@ -4,13 +4,13 @@ import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
 } from "@solana/wallet-adapter-wallets";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+// import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   ConnectionProvider,
   WalletProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import { clusterApiUrl } from "@solana/web3.js";
+// import { clusterApiUrl } from "@solana/web3.js";
 import { useEffect, useState } from "react";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
@@ -20,8 +20,9 @@ export default function Home() {
   const [wallets, setWallets] = useState([]);
 
   useEffect(() => {
-    const network = WalletAdapterNetwork.Mainnet;
-    setEndpoint(clusterApiUrl(network));
+    setEndpoint(
+      "https://tiniest-long-vineyard.solana-mainnet.quiknode.pro/89c871fcb44543478164b00d02fcaf3807e3a83f/"
+    );
     setWallets([new PhantomWalletAdapter(), new SolflareWalletAdapter()]);
   }, []);
 
