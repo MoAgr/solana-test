@@ -10,8 +10,7 @@ import {
 import dynamic from "next/dynamic";
 
 // Constants
-const MAINNET_RPC =
-  "https://tiniest-long-vineyard.solana-mainnet.quiknode.pro/89c871fcb44543478164b00d02fcaf3807e3a83f/";
+const MAINNET_RPC = "QUICKNODE_RPC";
 const USDC_TOKEN_ADDRESS = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 const DOMAIN_NAME = "moagrw";
 const DOMAIN_SPACE = 1 * 1_000; // 1kB

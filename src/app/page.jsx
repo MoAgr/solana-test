@@ -20,9 +20,7 @@ export default function Home() {
   const [wallets, setWallets] = useState([]);
 
   useEffect(() => {
-    setEndpoint(
-      "https://tiniest-long-vineyard.solana-mainnet.quiknode.pro/89c871fcb44543478164b00d02fcaf3807e3a83f/"
-    );
+    setEndpoint("QUICKNODE_RPC");
     setWallets([new PhantomWalletAdapter(), new SolflareWalletAdapter()]);
   }, []);
 
